@@ -6,3 +6,6 @@ def sms(stuffing):
 
     twilioCli = TwilioRestClient(config.accountSID, config.authToken)
     message = twilioCli.messages.create(body=stuffing, from_=config.myTwilioNumber, to=config.myCellPhone)
+
+
+sms('test test 1 2 3')
